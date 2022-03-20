@@ -1,0 +1,21 @@
+header{
+    border:1px solid #1a1a1a;
+    background:#6fb5ff;
+}
+
+.box1{
+    border:0px solid #1a1a1a;
+    width:30%;
+    float:left;
+}
+
+.box2{
+    border:0px solid #1a1a1a;
+    width:70%;
+    float:right;
+}
+
+footer{
+    background: white;
+    clear:both;
+}
