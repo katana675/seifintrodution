@@ -2,65 +2,49 @@
     <html>
        <head>
            <title>トップ画面</title>
-           <style>
-               *{margin:0;padding:0;}
-               .head,.foot{
-                   border-style:solid;
-                   border-width:0px;
-               }
-               .foot{
-                   clear:both;
-               }
-           </style>
+           
+           <link rel="stylesheet" href="index.css">
        </head> 
        <body>
+           トップ画面
            <header>
-               <div class="head" id="head">
-               <h1>トップ画面</h1>
-               <!-- 画像を出す -->
-                <p style="text-align:center"><img src="image/Uwajimacastle.jpg"></p>
-                </div>
-                <!---navタグでナビケーションを作成-->
-                <nav id="nav-pc">
-                    <a href="/index.html">トップ</a>
-                    <a href="navi2.html">ナビ2</a>
-                    <a href="navi3.html">ナビ3</a>
-                    <a href="navi4.html">ナビ4</a>
-                    <a href="./seif-introduction/self-introduction.html">自己紹介</a>
-                </nav> 
+            <p style="text-align:center"><img src="./image/Uwajimacastle.jpg"></p>
+               <ul id="nav">
+                   <li><a href="/index.html">トップ</a></li>
+                   <li><a href="navi2">ナビ２</a></li>
+                   <li><a href="navi3">ナビ３</a></li>
+                   <li><a href="./otoiawase/otoiawase.html">お問い合わせ</a></li>
+                   <li><a href="./seif-introduction/self-introduction.html">自己紹介</a></li>
+               </ul>
             </header>
-                <div class="box1">
-                <p>
-                <h3> 宇和島が好きです</h3>
-                        <h2>小見出し１</h2>
-                        <ul>
-                            <li>宇和島城</li>
-                            <li>きさいや広場</li>
-                            <li>商店街</li>
-                        </ul>
-                     <h2>小見出し２</h2>
-                        <ul>
-                            <li>じゃこ天</li>
-                            <li>さつま汁</li>
-                            <li>鯛めし</li>
-                        </ul> 
-                </p>
-                </div>
-                <div class="box2">
-                    <p>
-                        <p>サイドメニュー１</p>
-                        <p>項目１</p>
-                        <p>項目２</p>
-                        <p>項目３</p>
-                        <p>項目４</p>
-                        <p>項目５</p>
-                        <p>項目６</p>
-                    </p>
-                </div>
-           <footer>
-                <div style="text-align: center">
-               <h3>20xx oo All Rights Reserved</h3>
-                </div>
-           </footer>
+            <main>
+           <div style="display:flex;">
+            <div style="width:calc(100% - 200px);">
+               <h3>トップ画面です。たのしんでください</h3>
+            <p style="background-color:blue;color:white;"><h2>小見出し１</h2></p>
+            <ul>
+                <li>宇和島城</li>
+                <li>きさいや広場</li>
+                <li>南予文化会館</li>
+            </ul>
+            <p style="background-color:blue;color:white;"><h2>小見出し２</h2></p>
+            <ul>
+                <li>鯛めし</li>
+                <li>じゃこ天</li>
+                <li>さつま汁</li>
+            </ul>
+            </div>
+            <div style="width:600px;">
+            <p style="background-color:blue;color:white;">サイドメニュー１</p>
+            項目１<br>
+            項目２<br>
+            項目３<br>
+            項目４
+            </div>
+            </main>
        </body>
+       <footer>
+        <p style="background-color:blue;color:white;">
+        20xx oo All Rights Reserved</p>
+       </footer>
     </html>
