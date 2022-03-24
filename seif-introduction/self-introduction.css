@@ -1,6 +1,6 @@
 header{
     border:1px solid #1a1a1a;
-    background:#6fb5ff;
+    background:blue;
 }
 
 .box1{
@@ -18,4 +18,10 @@ header{
 footer{
     background: white;
     clear:both;
+}
+
+.box5{
+    background-color:blue;
+    text-align:center;
+    margin:30px auto;
 }
