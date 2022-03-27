@@ -21,3 +21,35 @@ footer{
     text-align:center;
     margin:30px auto;
 }
+
+.side-menu{
+    width:300px;
+    
+}
+
+#first-gen{
+    background-color:blue ;
+    border:1px solid black;
+    color:white;
+}
+
+#second-gen{
+    border:1px solid black
+}
+
+#twice-gen{
+    border:1px solid black;
+}
+
+#fourth-gen{
+    border:1px solid black;
+}
+
+#five-gen{
+    border:1px solid black;
+}
+
+.daimei{
+    background-color:blue;
+    color:white;
+}

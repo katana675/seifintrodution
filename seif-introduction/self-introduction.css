@@ -25,3 +25,22 @@ footer{
     text-align:center;
     margin:30px auto;
 }
+
+#nav{
+    list-style: none;
+    font-size: 0;
+}
+
+#nav li{
+    width:20vh;
+    text-align:center;
+    background-color:blue;
+    display:inline-block;
+    font-size:23px;
+}
+
+#nav li a{
+    text-decoration:none;
+    color:white;
+    font-weight: bold;
+}
