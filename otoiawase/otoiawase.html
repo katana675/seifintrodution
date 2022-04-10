@@ -11,23 +11,31 @@
             <li><a href="ナビ２">ナビ２
             <li><a href="ナビ３">ナビ３
             <li><a href="/seif-introduction/self-introduction.html">自己紹介
-            <li><a href="/otoiawase/otoiawase.html">お問い合わせ
+            <li><a href="/otoiawase/otoiawase.html">お問い合わせ</a>
         </ul>
         <form>
             <label>名前</label>
-            <input type="text"><br>
+            <input type="text" id="textName"/><br>
             <label>性別</label>
-            <input type="radio" name="gender"><label>男性</label>
-            <input type="radio" name="gender"><label>女性</label>
+            <input type="radio" name="textName"><label>男性</label>
+            <input type="radio" name="textName"><label>女性</label>
             <br>
             <label>問合内容</label>
-            <textarea></textarea><br>
+            <textarea id="textName"></textarea> <br>
             <label>添付ファイル</label><input type="file">
             <br>
             <div class="sousin">
-            <input type="submit" value="送信">
+            <input type="submit" value="送信" oncilck="OnButtonClick();">
         </div>
         </form>
+        <script>
+            let kakunin=()=>{
+            document.getElementById("送信").onclick=function(){
+                if(textName.value==""()){
+                    alert("入力してください")}
+                }
+            }
+        </script>
     </body>
     <footer>
         <p style="background-color:blue;color:white;">
