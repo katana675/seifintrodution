@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<hitml>
+    <head>
+        <titile>クラス</titile>
+        <script>
+            function check(){
+                if(mail_form.mail.value== ""){
+                    alert("text");
+                    return false;
+                }else{
+                    return true;
+                }
+            }
+        </script>
+    </head>
+    <header></header>
+    <body>
+       <form action="xxx.html" method="get" name="mail_form">
+        メールアドレス:<input type="text" name="mail">
+       <input type="submit" value="送信" onclick="return check()">
+       </form>   
+    </body>
+</hitml>

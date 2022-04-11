@@ -13,27 +13,42 @@
             <li><a href="/seif-introduction/self-introduction.html">自己紹介
             <li><a href="/otoiawase/otoiawase.html">お問い合わせ</a>
         </ul>
-        <form name="myForm">
-            <label>名前</label>
-            <input type="text" id="myText"/><br>
-            <label>性別</label>
-            <input type="radio" name="textName"><label>男性</label>
-            <input type="radio" name="textName"><label>女性</label>
-            <br>
-            <label>問合内容</label>
-            <textarea id="textName"></textarea> <br>
-            <label>添付ファイル</label><input type="file">
-            <br>
-            <div class="sousin">
-            <input type="submit" value="送信" oncilck="OnButtonClick();">
-        </div>
+        <form id="mybtn">
+            <table>
+                <tr>
+                    <td>名前</td>
+                    <td>
+                        <label><input type="text" name="a1" value=""></label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>性別</td>
+                    <td>
+                        <label><input type="radio" name="a2" value="seif">男性</label>
+                        <label><input type="radio" name="a2" value="seif">女性</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>問合せ内容</td>
+                    <td>
+                        <textarea></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>添付ファイル</td>
+                </tr>
+                <tr><td><button type="button" oncllick="getValue()">送信</button></td></tr>
+            </table>
         </form>
         <script>
-            const btn=document.getElementById("btn");
-           document.forms.forms.text.myText.radio.textName;
-           if(document.getElementById(myForm.value=="")){
-            alert("入力してください")
-           }
+            let check=()=>{
+                if(a1.value==""){
+                    alert("text");
+                    return false;
+                }else{
+                    return true;
+                }
+            }
         </script>
     </body>
     <footer>
