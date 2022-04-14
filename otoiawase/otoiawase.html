@@ -1,4 +1,4 @@
-<!doctype>
+<!doctype html>
 <html>
     <head>
         <title>お問い合わせ</title>
@@ -41,17 +41,17 @@
             </table>
         </form>
         <script>
+            let textBox=["a1","a2","a3"]
             let seai=()=>{
-                let textBox=["a1","a2","a3"]
                 alert("名前を入力してください");
-                for(i=0; i<=textBox.length; i++);{
-                if(textBox[1].value==""){
+                let textBox=document.getElementById("a1");
+                if(textBox[0].value==""){
                     alert("名前を入力してください");
                     return false;
                 }else{
                     return true;
                 }
-            }}
+            }
         </script>
     </body>
     <footer>
