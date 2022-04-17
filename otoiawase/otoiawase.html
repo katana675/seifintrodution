@@ -18,20 +18,20 @@
                 <tr>
                     <td>名前</td>
                     <td>
-                        <label><input type="text" name="a1" value=""></label>
+                        <label><input id="id1" type="text" name="a1" value=""></label>
                     </td>
                 </tr>
                 <tr>
                     <td>性別</td>
                     <td>
-                        <label><input type="radio" name="a2" value="seif">男性</label>
-                        <label><input type="radio" name="a2" value="seif">女性</label>
+                        <label><input id="id2" type="radio" name="a2" value="seif">男性</label>
+                        <label><input id="id2" type="radio" name="a2" value="seif">女性</label>
                     </td>
                 </tr>
                 <tr>
                     <td>問合せ内容</td>
                     <td>
-                        <textarea name="a3"></textarea>
+                        <textarea id="id3" name="a3"></textarea>
                     </td>
                 </tr>
                 <tr>
@@ -42,17 +42,14 @@
         </form>
         <script>
             let seai=()=>{
-                alert("faut");
-                let textBox=document.getElemntsByName("a1","a2","a3");
-                if(textBox(a1.value=="")) {
-                    
-                    alert("faut=名前を入力してください");
+                let textBox1=document.getElementById("id1");
+                let textBox2=document.getElementById("id2");
+                // let value=textBox.value;
+                if(textBox1.value=="") {
+                    alert("入力してください");
                     return false;
-                }else if(textBox(a2.value=="")){
+                }else if(textBox2.value==""){
                     alert("性別を入力してください");
-                    return false;
-                }else if(textBox(a3.value=="")){
-                    alert("問合せを入力してください");
                     return false;
                 }else{
                     return true;
