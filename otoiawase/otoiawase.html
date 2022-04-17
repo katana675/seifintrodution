@@ -13,7 +13,7 @@
             <li><a href="/seif-introduction/self-introduction.html">自己紹介
             <li><a href="/otoiawase/otoiawase.html">お問い合わせ</a>
         </ul>
-        <form id="mybtn">
+        <form name="mybtn">
             <table>
                 <tr>
                     <td>名前</td>
@@ -24,8 +24,8 @@
                 <tr>
                     <td>性別</td>
                     <td>
-                        <label><input id="id2" type="radio" name="a2" value="seif">男性</label>
-                        <label><input id="id2" type="radio" name="a2" value="seif">女性</label>
+                        <label><input id="id2" type="radio" name="a2" value="man">男性</label>
+                        <label><input id="id2" type="radio" name="a2" value="women">女性</label>
                     </td>
                 </tr>
                 <tr>
@@ -43,13 +43,25 @@
         <script>
             let seai=()=>{
                 let textBox1=document.getElementById("id1");
-                let textBox2=document.getElementById("id2");
+                let textBox2=document.getElementsByName("a2");
+                let textBox3=document.getElementById("id3");
+                let flag=false;
+                for(let i=0; i<textBox2.length; i++){
+                if(textBox2[i].checked){
+                    flag=true;
+                    // alert("性別を入力してください");
+                    // return false;
+                    }
+                }
                 // let value=textBox.value;
                 if(textBox1.value=="") {
                     alert("入力してください");
                     return false;
-                }else if(textBox2.value==""){
+                }else if(flag==false){
                     alert("性別を入力してください");
+                    return false;
+                }else if(textBox3.value==""){
+                    alert("問合せを入力してください");
                     return false;
                 }else{
                     return true;

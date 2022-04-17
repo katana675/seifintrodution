@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>お問い合わせ</title>
+            <style>
+                .green-text{
+                    border:1px solid green;
+                }
+                #mailbotton{
+                    display:inline-block;
+                    text-decoration:none;
+                    width:100px;
+                    color:white;
+                    text-align:center;
+                    padding:10px;
+                    background:#3366FF;
+                }
+            </style>
+            <script>
+                let gooing=()=>{
+                let textbox1=document.getElementById("nametext");
+                let textbox2=document.getElementsByName("a2");
+                let textbox3=document.getElementById("mailbox");
+                let textbox4=document.getElementById("agetext");
+                let flag=false;
+                for(i=0; i<textbox2.length; i++){
+                    if(textbox2[i].checked){
+                        flag=true;
+                        }
+                    }
+                    if(textbox1.value==""){
+                        alert("名前を入力してください");
+                        return false;
+                    }else if(flag==false){
+                        alert("性別を入力してください");
+                        return false;
+                    }else if(textbox3.value==""){
+                        alert("Eメールを入力してください");
+                        return false;
+                    }else if(textbox4.value==""){
+                        alert("年齢を入力してください");
+                        return false;
+                    }else{
+                        return true;
+                    }
+                }
+            </script>
+        </head>
+        <body>
+            <form id="alltext">
+                <table>
+                    <tr>
+                        <td>名前</td>
+                        <td>
+                            <label><input id="nametext" type="text" name="a1" class="green-text" value=""></label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>性別</td>
+                        <td>
+                            <label><input type="radio" name="a2" value="man">男性</label>
+                            <label><input type="radio" name="a2" value="woman">女性</label>
+                            <label><input type="radio" name="a2" value="anothor">その他</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Eメール</td>
+                        <td>
+                            <label><input id="mailbox" type="text" name="a3" class="green-text" value=""></label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>年齢</td>
+                        <td>
+                            <label><input id="agetext" type="text" name="a4" class="green-text" value=""></label>
+                        </td>
+                    </tr>
+                    <tr><td><button id="mailbotton" type="button" onclick="gooing()">送信</button></td></tr>
+                </table>
+            </form>
+        </body>
+    </html>
