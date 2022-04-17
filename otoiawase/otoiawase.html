@@ -41,12 +41,18 @@
             </table>
         </form>
         <script>
-            let textBox=["a1","a2","a3"]
             let seai=()=>{
-                alert("名前を入力してください");
-                let textBox=document.getElementById("a1");
-                if(textBox[0].value==""){
-                    alert("名前を入力してください");
+                alert("faut");
+                let textBox=document.getElemntsByName("a1","a2","a3");
+                if(textBox(a1.value=="")) {
+                    
+                    alert("faut=名前を入力してください");
+                    return false;
+                }else if(textBox(a2.value=="")){
+                    alert("性別を入力してください");
+                    return false;
+                }else if(textBox(a3.value=="")){
+                    alert("問合せを入力してください");
                     return false;
                 }else{
                     return true;
