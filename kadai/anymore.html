@@ -40,6 +40,10 @@
                     }else if(textbox4.value==""){
                         alert("年齢を入力してください");
                         return false;
+                    }else if(isNaN(document.textbox4)){
+                    // }else if(Number.isInteger(textbox4)){
+                        alert("年齢は数字を入力してください");
+                        return false;
                     }else{
                         return true;
                     }
