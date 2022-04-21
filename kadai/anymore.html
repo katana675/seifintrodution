@@ -23,6 +23,7 @@
                 let textbox3=document.getElementById("mailbox");
                 let textbox4=document.getElementById("agetext");
                 let flag=false;
+                let check=/^[0-9]/;
                 for(i=0; i<textbox2.length; i++){
                     if(textbox2[i].checked){
                         flag=true;
@@ -40,8 +41,7 @@
                     }else if(textbox4.value==""){
                         alert("年齢を入力してください");
                         return false;
-                    }else if(isNaN(document.textbox4)){
-                    // }else if(Number.isInteger(textbox4)){
+                    }else if(Number.isInteger(textbox4.value=match.check)){
                         alert("年齢は数字を入力してください");
                         return false;
                     }else{
@@ -76,7 +76,7 @@
                     <tr>
                         <td>年齢</td>
                         <td>
-                            <label><input id="agetext" type="text" name="a4" class="green-text" value=""></label>
+                            <label><input id="agetext" type="text" name="a4" class="green-text"  value=""></label>
                         </td>
                     </tr>
                     <tr><td><button id="mailbotton" type="button" onclick="gooing()">送信</button></td></tr>
