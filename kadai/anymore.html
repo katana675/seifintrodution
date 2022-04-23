@@ -23,7 +23,6 @@
                 let textbox3=document.getElementById("mailbox");
                 let textbox4=document.getElementById("agetext");
                 let flag=false;
-                let check=/^[0-9]/;
                 for(i=0; i<textbox2.length; i++){
                     if(textbox2[i].checked){
                         flag=true;
@@ -41,7 +40,8 @@
                     }else if(textbox4.value==""){
                         alert("年齢を入力してください");
                         return false;
-                    }else if(Number.isInteger(textbox4.value=match.check)){
+                    }else if(Number.isInteger(Number(textbox4.value))==false){
+                        // この部分です
                         alert("年齢は数字を入力してください");
                         return false;
                     }else{
